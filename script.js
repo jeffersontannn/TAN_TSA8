@@ -1,20 +1,65 @@
-function resetFlexbox() {
- document.getElementById('gap').value = 0;
- setFlexDirection('row');
- setJustifyContent('flex-start');
- setAlignItems('flex-start');
- resetFlexGrow();
+body {
+ font-family: Arial, sans-serif;
 }
-function setFlexDirection(direction) {
- document.getElementById('flex-container').style.flexDirection = direction;
+
+.controls {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+ margin-bottom: 20px;
 }
-function setJustifyContent(content) {
- document.getElementById('flex-container').style.justifyContent = content;
+
+.controls div {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
 }
-function setAlignItems(items) {
- document.getElementById('flex-container').style.alignItems = items;
+
+.controls button,
+.controls input {
+ padding: 10px;
+ margin: 5px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
 }
-function resetFlexGrow() {
- document.getElementById('box1-grow').value = 0;
- document.getElementById('box2-grow').value = 0;
- document.getElementBy
+
+#reset-flexbox,
+#flex-direction-row,
+#flex-direction-column,
+#justify-start,
+#justify-center,
+#justify-end,
+#justify-space-between,
+#justify-space-around,
+#justify-space-evenly,
+#align-start,
+#align-center,
+#align-end,
+#grow-reset,
+#grow-all {
+ background-color: #6a1b9a;
+ color: white;
+}
+
+#grow-item-1,
+#grow-item-2,
+#grow-item-3 {
+ background-color: #d32f2f;
+ color: white;
+}
+
+.flex-container {
+ display: flex;
+ border: 1px solid #ccc;
+ padding: 10px;
+ min-height: 200px;
+}
+
+.flex-item {
+ background-color: #1976d2;
+ color: white;
+ text-align: center;
+ padding: 20px;
+ margin: 5px;
+}
