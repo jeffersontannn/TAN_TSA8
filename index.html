@@ -7,60 +7,37 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<h1>Flexbox Simulator</h1>
-</header>
-<main>
-<section class="controls">
-<button onclick="resetFlexbox()">Reset Flexbox</button>
-<div class="control-group">
-<label for="gap">Gap</label>
-<input type="number" id="gap" value="0">
-</div>
-<div class="control-group">
-<label>Flex Direction</label>
-<button onclick="updateFlexDirection('row')">Row</button>
-<button onclick="updateFlexDirection('column')">Column</button>
-</div>
-<div class="control-group">
-<label>Justify Content</label>
-<button onclick="updateJustifyContent('flex-start')">Start</button>
-<button onclick="updateJustifyContent('center')">Center</button>
-<button onclick="updateJustifyContent('flex-end')">End</button>
-<button onclick="updateJustifyContent('space-between')">Space Between</button>
-<button onclick="updateJustifyContent('space-around')">Space Around</button>
-<button onclick="updateJustifyContent('space-evenly')">Space Evenly</button>
-</div>
-<div class="control-group">
-<label>Align Items</label>
-<button onclick="updateAlignItems('flex-start')">Start</button>
-<button onclick="updateAlignItems('center')">Center</button>
-<button onclick="updateAlignItems('flex-end')">End</button>
-</div>
-<div class="control-group">
-<label>Flex Grow</label>
-<button onclick="resetFlexGrow()">Reset</button>
-<button onclick="growAll()">Grow All</button>
-<div>
-<label>Box 1</label>
-<input type="number" id="grow1" value="0">
-</div>
-<div>
-<label>Box 2</label>
-<input type="number" id="grow2" value="0">
-</div>
-<div>
-<label>Box 3</label>
-<input type="number" id="grow3" value="0">
-</div>
-</div>
-</section>
-<section class="flex-container" id="flex-container">
+<div class="flex-container" id="flex-container">
 <div class="flex-item" id="item1">1</div>
 <div class="flex-item" id="item2">2</div>
 <div class="flex-item" id="item3">3</div>
-</section>
-</main>
+</div>
+<div class="controls">
+<label for="gap">Gap: </label>
+<input type="number" id="gap" value="14">
+<label for="flex-direction">Flex Direction: </label>
+<select id="flex-direction">
+<option value="row">Row</option>
+<option value="column">Column</option>
+</select>
+<label for="justify-content">Justify Content: </label>
+<select id="justify-content">
+<option value="flex-start">Start</option>
+<option value="center">Center</option>
+<option value="flex-end">End</option>
+<option value="space-between">Space Between</option>
+<option value="space-around">Space Around</option>
+<option value="space-evenly">Space Evenly</option>
+</select>
+<label for="align-items">Align Items: </label>
+<select id="align-items">
+<option value="flex-start">Start</option>
+<option value="center">Center</option>
+<option value="flex-end">End</option>
+<option value="stretch">Stretch</option>
+</select>
+<button onclick="applyFlexbox()">Apply Flexbox</button>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
