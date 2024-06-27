@@ -1,65 +1,81 @@
-body {
- font-family: Arial, sans-serif;
-}
+document.getElementById('reset').addEventListener('click', () => {
+    document.querySelector('.flexbox').style = '';
+    document.getElementById('gap').value = 0;
+    document.getElementById('box1').value = 0;
+    document.getElementById('box2').value = 0;
+    document.getElementById('box3').value = 0;
+});
 
-.controls {
- display: flex;
- flex-wrap: wrap;
- gap: 10px;
- margin-bottom: 20px;
-}
+document.getElementById('gap').addEventListener('input', (event) => {
+    document.querySelector('.flexbox').style.gap = `${event.target.value}px`;
+});
 
-.controls div {
- display: flex;
- flex-direction: column;
- gap: 5px;
-}
+document.getElementById('row').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.flexDirection = 'row';
+});
 
-.controls button,
-.controls input {
- padding: 10px;
- margin: 5px;
- border: none;
- border-radius: 5px;
- cursor: pointer;
-}
+document.getElementById('column').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.flexDirection = 'column';
+});
 
-#reset-flexbox,
-#flex-direction-row,
-#flex-direction-column,
-#justify-start,
-#justify-center,
-#justify-end,
-#justify-space-between,
-#justify-space-around,
-#justify-space-evenly,
-#align-start,
-#align-center,
-#align-end,
-#grow-reset,
-#grow-all {
- background-color: #6a1b9a;
- color: white;
-}
+document.getElementById('start').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.justifyContent = 'flex-start';
+});
 
-#grow-item-1,
-#grow-item-2,
-#grow-item-3 {
- background-color: #d32f2f;
- color: white;
-}
+document.getElementById('center').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.justifyContent = 'center';
+});
 
-.flex-container {
- display: flex;
- border: 1px solid #ccc;
- padding: 10px;
- min-height: 200px;
-}
+document.getElementById('end').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.justifyContent = 'flex-end';
+});
 
-.flex-item {
- background-color: #1976d2;
- color: white;
- text-align: center;
- padding: 20px;
- margin: 5px;
-}
+document.getElementById('space-between').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.justifyContent = 'space-between';
+});
+
+document.getElementById('space-around').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.justifyContent = 'space-around';
+});
+
+document.getElementById('space-evenly').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.justifyContent = 'space-evenly';
+});
+
+document.getElementById('align-start').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.alignItems = 'flex-start';
+});
+
+document.getElementById('align-center').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.alignItems = 'center';
+});
+
+document.getElementById('align-end').addEventListener('click', () => {
+    document.querySelector('.flexbox').style.alignItems = 'flex-end';
+});
+
+document.getElementById('grow-reset').addEventListener('click', () => {
+    document.querySelectorAll('.box').forEach(box => box.style.flexGrow = 0);
+    document.getElementById('box1').value = 0;
+    document.getElementById('box2').value = 0;
+    document.getElementById('box3').value = 0;
+});
+
+document.getElementById('grow-all').addEventListener('click', () => {
+    document.querySelectorAll('.box').forEach(box => box.style.flexGrow = 1);
+    document.getElementById('box1').value = 1;
+    document.getElementById('box2').value = 1;
+    document.getElementById('box3').value = 1;
+});
+
+document.getElementById('box1').addEventListener('input', (event) => {
+    document.querySelector('#box1').style.flexGrow = event.target.value;
+});
+
+document.getElementById('box2').addEventListener('input', (event) => {
+    document.querySelector('#box2').style.flexGrow = event.target.value;
+});
+
+document.getElementById('box3').addEventListener('input', (event) => {
+    document.querySelector('#box3').style.flexGrow = event.target.value;
+});
