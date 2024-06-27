@@ -1,50 +1,30 @@
-[9:47 AM] TAN, JEFFERSON EMMANUEL
 body {
-
-  font-family: Arial, sans-serif;
-
+ font-family: Arial, sans-serif;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
-
-.flex-container {
-
-  display: flex;
-
-  border: 1px solid #ccc;
-
-  padding: 10px;
-
-  min-height: 200px;
-
-  margin-bottom: 20px;
-
-}
-
-.flex-item {
-
-  background-color: #4caf50;
-
-  color: white;
-
-  text-align: center;
-
-  padding: 20px;
-
-  margin: 5px;
-
-}
-
 .controls {
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 10px;
-
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 10px;
+ margin-bottom: 20px;
 }
-
-.controls label, .controls input, .controls select, .controls button {
-
-  margin: 5px;
-
+.controls button, .controls input {
+ margin: 5px;
+}
+.flex-container {
+ display: flex;
+ border: 1px solid #ccc;
+ padding: 10px;
+ width: 80%;
+ height: 200px;
+}
+.flex-item {
+ background-color: #4caf50;
+ color: white;
+ text-align: center;
+ padding: 20px;
+ margin: 5px;
 }
