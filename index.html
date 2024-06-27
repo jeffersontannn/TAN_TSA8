@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flexbox Simulator</title>
-<link rel="stylesheet" href="styles.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Flexbox Simulator</title>
+ <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="controls">
-<button onclick="resetFlexbox()">Reset Flexbox</button>
-<label for="gap">Gap</label>
-<input type="number" id="gap" value="0">
-<div>
-<label>Flex Direction</label>
-<button onclick="setFlexDirection('row')">Row</button>
-<button onclick="setFlexDirection('column')">Column</button>
-</div>
-<div>
-<label>Justify Content</label>
-<button onclick="setJustifyContent('flex-start')">Start</button>
-<button onclick="setJustifyContent('center')">Center</button>
-<button onclick="setJustifyContent('flex-end')">End</button>
-<button onclick="setJustifyContent('space-between')">Space Between</button>
-<button onclick="setJustifyContent('space-around')">Space Around</button>
-<button onclick="setJustifyContent('space-evenly')">Space Evenly</button>
-</div>
-<div>
-<label>Align Items</label>
-<button onclick="setAlignItems('flex-start')">Start</button>
-<button onclick="setAlignItems('center')">Center</button>
-<button onclick="setAlignItems('flex-end')">End</button>
-</div>
-<div>
-<label>Flex Grow</label>
-<button onclick="resetFlexGrow()">Reset</button>
-<button onclick="growAll()">Grow All</button>
-<div>
-<label>Box 1</label>
-<input type="number" id="box1-grow" value="0">
-</div>
-<div>
-<label>Box 2</label>
-<input type="number" id="box2-grow" value="0">
-</div>
-<div>
-<label>Box 3</label>
-<input type="number" id="box3-grow" value="0">
-</div>
-</div>
-</div>
-<div class="flex-container" id="flex-container">
-<div class="flex-item" id="item1">1</div>
-<div class="flex-item" id="item2">2</div>
-<div class="flex-item" id="item3">3</div>
-</div>
-<script src="script.js"></script>
+ <div class="controls">
+   <button id="reset-flexbox">Reset Flexbox</button>
+   <div>
+     <label for="gap">Gap</label>
+     <input type="number" id="gap" value="0">
+   </div>
+   <div>
+     <label>Flex Direction</label>
+     <button id="flex-direction-row">Row</button>
+     <button id="flex-direction-column">Column</button>
+   </div>
+   <div>
+     <label>Justify Content</label>
+     <button id="justify-start">Start</button>
+     <button id="justify-center">Center</button>
+     <button id="justify-end">End</button>
+     <button id="justify-space-between">Space Between</button>
+     <button id="justify-space-around">Space Around</button>
+     <button id="justify-space-evenly">Space Evenly</button>
+   </div>
+   <div>
+     <label>Align Items</label>
+     <button id="align-start">Start</button>
+     <button id="align-center">Center</button>
+     <button id="align-end">End</button>
+   </div>
+   <div>
+     <label>Flex Grow</label>
+     <button id="grow-reset">Reset</button>
+     <button id="grow-all">Grow All</button>
+     <div>
+       <label for="grow-item-1">Box 1</label>
+       <input type="number" id="grow-item-1" value="0">
+     </div>
+     <div>
+       <label for="grow-item-2">Box 2</label>
+       <input type="number" id="grow-item-2" value="0">
+     </div>
+     <div>
+       <label for="grow-item-3">Box 3</label>
+       <input type="number" id="grow-item-3" value="0">
+     </div>
+   </div>
+ </div>
+
+ <div class="flex-container" id="flex-container">
+   <div class="flex-item" id="item1">1</div>
+   <div class="flex-item" id="item2">2</div>
+   <div class="flex-item" id="item3">3</div>
+ </div>
+
+ <script src="script.js"></script>
 </body>
 </html>
