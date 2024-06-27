@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Simulator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Flexbox Simulator</h1>
+</header>
+<main>
+<section class="controls">
+<div class="control-group">
+<label for="flex-direction">Flex Direction</label>
+<select id="flex-direction">
+<option value="row">Row</option>
+<option value="row-reverse">Row Reverse</option>
+<option value="column">Column</option>
+<option value="column-reverse">Column Reverse</option>
+</select>
+</div>
+<div class="control-group">
+<label for="justify-content">Justify Content</label>
+<select id="justify-content">
+<option value="flex-start">Flex Start</option>
+<option value="flex-end">Flex End</option>
+<option value="center">Center</option>
+<option value="space-between">Space Between</option>
+<option value="space-around">Space Around</option>
+<option value="space-evenly">Space Evenly</option>
+</select>
+</div>
+<div class="control-group">
+<label for="align-items">Align Items</label>
+<select id="align-items">
+<option value="stretch">Stretch</option>
+<option value="flex-start">Flex Start</option>
+<option value="flex-end">Flex End</option>
+<option value="center">Center</option>
+<option value="baseline">Baseline</option>
+</select>
+</div>
+</section>
+<section class="flex-container" id="flex-container">
+<div class="flex-item">1</div>
+<div class="flex-item">2</div>
+<div class="flex-item">3</div>
+<div class="flex-item">4</div>
+<div class="flex-item">5</div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
