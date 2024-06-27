@@ -1,11 +1,20 @@
-function applyFlexbox() {
- const flexContainer = document.getElementById('flex-container');
- const gap = document.getElementById('gap').value + 'px';
- const flexDirection = document.getElementById('flex-direction').value;
- const justifyContent = document.getElementById('justify-content').value;
- const alignItems = document.getElementById('align-items').value;
- flexContainer.style.gap = gap;
- flexContainer.style.flexDirection = flexDirection;
- flexContainer.style.justifyContent = justifyContent;
- flexContainer.style.alignItems = alignItems;
+function resetFlexbox() {
+ document.getElementById('gap').value = 0;
+ setFlexDirection('row');
+ setJustifyContent('flex-start');
+ setAlignItems('flex-start');
+ resetFlexGrow();
 }
+function setFlexDirection(direction) {
+ document.getElementById('flex-container').style.flexDirection = direction;
+}
+function setJustifyContent(content) {
+ document.getElementById('flex-container').style.justifyContent = content;
+}
+function setAlignItems(items) {
+ document.getElementById('flex-container').style.alignItems = items;
+}
+function resetFlexGrow() {
+ document.getElementById('box1-grow').value = 0;
+ document.getElementById('box2-grow').value = 0;
+ document.getElementBy
