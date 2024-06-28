@@ -69,13 +69,13 @@ document.getElementById('grow-all').addEventListener('click', () => {
 });
 
 document.getElementById('box1').addEventListener('input', (event) => {
-    document.querySelector('#flexbox1').style.flexGrow = event.target.value;
+    document.querySelector('#box1').style.flexGrow = event.target.value;
 });
 
 document.getElementById('box2').addEventListener('input', (event) => {
-    document.querySelector('#flexbox2').style.flexGrow = event.target.value;
+    document.querySelector('#box2').style.flexGrow = event.target.value;
 });
 
 document.getElementById('box3').addEventListener('input', (event) => {
-    document.querySelector('#flexbox3').style.flexGrow = event.target.value;
+    document.querySelector('#box3').style.flexGrow = event.target.value;
 });
