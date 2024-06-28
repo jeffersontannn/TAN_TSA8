@@ -78,4 +78,5 @@ document.getElementById('box2').addEventListener('input', (e) => {
 });
 
 document.getElementById('box3').addEventListener('input', (e) => {
-    document.getElementById('flexbox3').style.flexGrow =
+    document.getElementById('flexbox3').style.flexGrow = e.target.value;
+});
