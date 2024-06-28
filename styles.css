@@ -29,7 +29,7 @@ body {
 }
 
 .control-button {
-    background-color: green;
+    background-color: blue;
     color: white;
     cursor: pointer;
 }
@@ -61,7 +61,7 @@ label {
 .box {
     width: 50px;
     height: 50px;
-    background-color: lightgrey;
+    background-color: black;
     border: 1px solid black;
     display: flex;
     align-items: center;
@@ -77,7 +77,7 @@ label {
     display: flex;
     margin: 20px;
     max-width: 260px;
-    background: green;
+    background: blue;
     padding: 30px;
 }
 
