@@ -3,11 +3,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
 }
 
 .container {
     display: flex;
     padding: 20px;
+    min-height: 100vh; 
 }
 
 .controls {
@@ -29,7 +33,7 @@ body {
 }
 
 .control-button {
-    background-color:#1705bf;
+    background-color: #1705bf;
     color: white;
     cursor: pointer;
 }
@@ -94,11 +98,17 @@ label {
     margin-top: 30px;
 }
 
-.flex-direction button, .justify-content button, .align-items button, .flex-grow button {
+.flex-direction button,
+.justify-content button,
+.align-items button,
+.flex-grow button {
     margin-bottom: 10px;
 }
 
-.flex-direction, .justify-content, .align-items, .flex-grow {
+.flex-direction,
+.justify-content,
+.align-items,
+.flex-grow {
     margin-bottom: 20px;
 }
 
