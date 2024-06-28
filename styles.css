@@ -3,19 +3,19 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('bg.jpg'); /* Path to your background image */
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
+    background-image: url('pokemon.jpg'); 
+    background-size: cover; 
+    background-position: center; 
 }
 
 .container {
     display: flex;
     padding: 20px;
-    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    min-height: 100vh; 
 }
 
 .category {
-    border: 2px solid #007bff; /* Blue border */
+    border: 2px solid #007bff; 
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -85,7 +85,6 @@ label {
     margin: 5px;
 }
 
-/* Specific styles for each category */
 .flex-direction {
     margin-top: 20px;
 }
