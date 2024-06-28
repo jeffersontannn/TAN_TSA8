@@ -3,21 +3,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('bg.jpg');
-    background-size: cover;
-    background-position: center; 
 }
 
 .container {
     display: flex;
     padding: 20px;
-    min-height: 100vh; 
-}
-
-.category {
-    border: 2px solid #007bff; 
-    padding: 10px;
-    margin-bottom: 20px;
 }
 
 .controls {
@@ -39,7 +29,7 @@ body {
 }
 
 .control-button {
-    background-color: #1705bf;
+    background-color: blue;
     color: white;
     cursor: pointer;
 }
@@ -49,7 +39,7 @@ body {
 }
 
 button#reset {
-    background-color: #1705bf;
+    background-color: blue;
 }
 
 label {
@@ -80,11 +70,6 @@ label {
     margin: 5px;
 }
 
-.category-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 .flex-direction, .justify-content, .align-items, .flex-grow {
     margin-top: 20px;
 }
@@ -109,17 +94,12 @@ label {
     margin-top: 30px;
 }
 
-.flex-direction button,
-.justify-content button,
-.align-items button,
-.flex-grow button {
+/* Additional spacing between button groups */
+.flex-direction button, .justify-content button, .align-items button, .flex-grow button {
     margin-bottom: 10px;
 }
 
-.flex-direction,
-.justify-content,
-.align-items,
-.flex-grow {
+.flex-direction, .justify-content, .align-items, .flex-grow {
     margin-bottom: 20px;
 }
 
