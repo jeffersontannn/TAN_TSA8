@@ -39,7 +39,7 @@ body {
 }
 
 button#reset {
-    background-color: blue;
+    background-color: red;
 }
 
 label {
@@ -72,40 +72,4 @@ label {
 
 .flex-direction, .justify-content, .align-items, .flex-grow {
     margin-top: 20px;
-}
-
-.input-group {
-    margin-top: 10px;
-}
-
-.input-group input {
-    margin-top: 5px;
-}
-
-.justify-content {
-    margin-top: 30px;
-}
-
-.align-items {
-    margin-top: 30px;
-}
-
-.flex-grow {
-    margin-top: 30px;
-}
-
-/* Additional spacing between button groups */
-.flex-direction button, .justify-content button, .align-items button, .flex-grow button {
-    margin-bottom: 10px;
-}
-
-.flex-direction, .justify-content, .align-items, .flex-grow {
-    margin-bottom: 20px;
-}
-
-.flex-direction button + button,
-.justify-content button + button,
-.align-items button + button,
-.flex-grow button + button {
-    margin-top: 10px;
 }
