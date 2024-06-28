@@ -29,7 +29,7 @@ body {
 }
 
 .control-button {
-    background-color: blue;
+    background-color:#1705bf;
     color: white;
     cursor: pointer;
 }
@@ -52,7 +52,7 @@ label {
     flex-wrap: wrap;
     gap: 0px;
     padding: 20px;
-    border: 3px #1705bf;
+    border: 1px solid black;
     flex: 1;
     justify-content: flex-start;
     align-items: flex-start;
@@ -92,4 +92,19 @@ label {
 
 .flex-grow {
     margin-top: 30px;
+}
+
+.flex-direction button, .justify-content button, .align-items button, .flex-grow button {
+    margin-bottom: 10px;
+}
+
+.flex-direction, .justify-content, .align-items, .flex-grow {
+    margin-bottom: 20px;
+}
+
+.flex-direction button + button,
+.justify-content button + button,
+.align-items button + button,
+.flex-grow button + button {
+    margin-top: 10px;
 }
