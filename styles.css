@@ -108,10 +108,3 @@ label {
 .flex-grow button + button {
     margin-top: 10px;
 }
-
-.flex-container {
-  background-image: url('path/to/your/images.jpeg');
-  background-size: cover;
-  background-position: center; 
-}
-
