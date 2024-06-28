@@ -3,21 +3,27 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('pokemon.jpg');
-    background-size: cover;
-    background-position: center; 
+    background-image: url('bg.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
 }
 
 .container {
     display: flex;
     padding: 20px;
-    min-height: 100vh; 
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
 }
 
+/* Style for each category */
 .category {
-    border: 2px solid #007bff; 
+    border: 2px solid #007bff; /* Blue border */
     padding: 10px;
     margin-bottom: 20px;
+}
+
+.category-title {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .controls {
@@ -80,33 +86,21 @@ label {
     margin: 5px;
 }
 
-.category-title {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.flex-direction, .justify-content, .align-items, .flex-grow {
+/* Specific styles for each category */
+.flex-direction {
     margin-top: 20px;
 }
 
-.input-group {
-    margin-top: 10px;
-}
-
-.input-group input {
-    margin-top: 5px;
-}
-
 .justify-content {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .align-items {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .flex-grow {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .flex-direction button,
