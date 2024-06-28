@@ -29,7 +29,7 @@ body {
 }
 
 .control-button {
-    background-color: purple;
+    background-color: green;
     color: white;
     cursor: pointer;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 button#reset {
-    background-color: red;
+    background-color: blue;
 }
 
 label {
@@ -77,7 +77,7 @@ label {
     display: flex;
     margin: 20px;
     max-width: 260px;
-    background: orange;
+    background: green;
     padding: 30px;
 }
 
