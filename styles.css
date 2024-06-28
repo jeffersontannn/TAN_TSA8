@@ -3,10 +3,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-image: url('pokemon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 .container {
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
 }
 .controls {
     margin-bottom: 20px;
@@ -33,6 +40,10 @@ body {
     gap: 10px;
     border: 2px solid blue;
     padding: 10px;
+    justify-content: center;
+    align-items: center; 
+    height: 200px; 
+    width: 100%; 
 }
 .box {
     background-color: lightgray;
@@ -40,4 +51,6 @@ body {
     border: 1px solid gray;
     text-align: center;
     flex-grow: 0;
+    width: 100px; 
+    height: 100px; 
 }
