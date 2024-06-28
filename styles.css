@@ -14,7 +14,6 @@ body {
     min-height: 100vh; /* Ensure the container takes up the full viewport height */
 }
 
-/* Style for each category */
 .category {
     border: 2px solid #007bff; /* Blue border */
     padding: 10px;
